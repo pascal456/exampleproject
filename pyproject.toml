@@ -17,12 +17,16 @@ packages = [{ include = "exampleproject" }]
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
 
-autogluon = "^1.0.0"
-fhdw-modelling = "^7.2.0"
-mlflow = "2.10.2"
-plotly = "^5.20.0"
-redis = "^5.0.3"
-torch = ">=2.0.0, !=2.0.1, !=2.1.0" # excluded versions miss cuda libs (maybe a bug...)
+fhdw-modelling = "^7.1.0"
+kaleido = "0.2.1"
+openpyxl = "^3.1.2"
+pycaret = {extras = ["mlops", "models"], version = "^3.3.0"}
+pyyaml = "^6.0.1"
+redis = "^5.0.1"
+seaborn = "^0.13.1"
+shap = "^0.44.0"
+tpot = "^0.12.2"
+mlflow = "^2.10.2"
 
 [tool.poetry.group.dev.dependencies]
 bandit = "^1.7.8"
